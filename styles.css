@@ -402,8 +402,66 @@ h2 {
 .site-footer p { margin: 0; color: rgba(247, 243, 236, 0.82); }
 .site-footer a { color: var(--copper-light); }
 
+
+/* December Special */
+.promo-banner {
+  background: var(--cream);
+  color: var(--ink);
+  border-bottom: 3px solid var(--copper);
+  padding: 0.9rem 0;
+}
+.promo-banner .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.promo-banner p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  max-width: 46rem;
+}
+.promo-kicker {
+  display: block;
+  font-family: var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: var(--copper);
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+.promo-banner .btn {
+  flex-shrink: 0;
+  padding: 0.65rem 1.2rem;
+}
+.promo-note {
+  background: var(--white);
+  border: 2px solid var(--copper);
+  padding: 1rem 1.2rem;
+  margin: 0 0 2.2rem;
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+.promo-note strong {
+  display: block;
+  font-family: var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: var(--copper);
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
 /* Mobile */
 @media (max-width: 860px) {
+  .promo-banner .wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .cards, .plans, .about-grid { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr 1fr; }
   .about-art { order: -1; max-width: 28rem; }
